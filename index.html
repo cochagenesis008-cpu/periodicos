@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Periódicos del mundo</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fff0f5;
+            color: #63364c;
+        }
+
+        /* ENCABEZADO */
+        header {
+            background: linear-gradient(135deg, #c2185b, #f06292, #f8bbd0);
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+            box-shadow: 0 4px 12px #ad145733;
+        }
+
+        header h2 {
+            font-size: 21px;
+            margin: 5px 0 12px;
+        }
+
+        header h3 {
+            margin: 0;
+            font-weight: normal;
+        }
+
+        /* TITULO PRINCIPAL */
+        .portada {
+            text-align: center;
+            padding: 35px 15px 25px;
+        }
+
+        .portada h1 {
+            color: #ad1457;
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .portada p {
+            color: #8e4968;
+            font-size: 17px;
+        }
+
+        .decoracion {
+            color: #ec407a;
+            font-size: 23px;
+            letter-spacing: 8px;
+        }
+
+        /* TABLA */
+        .contenedor {
+            width: 94%;
+            max-width: 1100px;
+            margin: 0 auto 35px;
+            background: white;
+            padding: 20px;
+            border-radius: 18px;
+            box-shadow: 0 6px 22px #c2185b20;
+            overflow-x: auto;
+            border: 2px solid #f8bbd0;
+        }
+
+        table {
+            width: 100%;
+            min-width: 620px;
+            border-collapse: separate;
+            border-spacing: 0;
+            overflow: hidden;
+        }
+
+        thead {
+            background: #c2185b;
+            color: white;
+        }
+
+        th {
+            background: #c2185b;
+            color: white;
+            padding: 16px 12px;
+            font-size: 15px;
+        }
+
+        td {
+            padding: 14px 12px;
+            text-align: center;
+            border-bottom: 1px solid #f8d7e4;
+            border-right: 1px solid #f8d7e4;
+        }
+
+        th:first-child,
+        td:first-child {
+            border-left: 1px solid #f8d7e4;
+        }
+
+        tbody tr {
+            transition: background 0.25s;
+        }
+
+        tbody tr:hover {
+            background: #ffe4ef;
+        }
+
+        /* BANDERAS */
+        .bandera img {
+            width: 95px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            border: 2px solid #f8bbd0;
+            box-shadow: 0 3px 7px #00000015;
+        }
+
+        /* NOMBRES DE LOS PAISES */
+        .pais {
+            font-weight: bold;
+            font-size: 17px;
+            color: #ad1457;
+        }
+
+        .argentina { background: #fce4ec; }
+        .colombia  { background: #f8bbd0; }
+        .ecuador   { background: #fce4ec; }
+        .espana    { background: #f8bbd0; }
+        .mexico    { background: #fce4ec; }
+        .peru      { background: #f8bbd0; }
+
+        /* ENLACES */
+        a {
+            display: inline-block;
+            background: #ec407a;
+            color: white;
+            text-decoration: none;
+            padding: 10px 13px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background 0.25s, transform 0.25s;
+        }
+
+        a:hover {
+            background: #ad1457;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px #ad145733;
+        }
+
+        /* ESPACIO ENTRE PAISES */
+        .separador td {
+            height: 12px;
+            padding: 0;
+            background: #fff0f5;
+            border: none;
+        }
+
+        /* PIE DE PAGINA */
+        footer {
+            background: linear-gradient(135deg, #ad1457, #ec407a);
+            color: white;
+            text-align: center;
+            padding: 28px 15px;
+            margin-top: 35px;
+        }
+
+        footer h2 {
+            margin: 0 0 12px;
+        }
+
+        footer p {
+            margin: 7px 0;
+        }
+
+        footer .corazon {
+            font-size: 22px;
+        }
+
+        /* DISEÑO PARA CELULARES */
+        @media (max-width: 600px) {
+            header h2 {
+                font-size: 17px;
+            }
+
+            .portada h1 {
+                font-size: 29px;
+            }
+
+            .contenedor {
+                width: 96%;
+                padding: 10px;
+            }
+
+            th, td {
+                padding: 11px 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Integrante: Arequipa Damaris,Cocha Genesis ,Chavez Wendy</h2>
+        <h3>Curso: 3ero "C"</h3>
+    </header>
+
+    <section class="portada">
+        <div class="decoracion"></div>
+        <h1>📰 Periódicos del mundo 🌎</h1>
+        <p>Descubre las noticias más importantes de diferentes países.</p>
+    
+    </section>
+
+    <main class="contenedor">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>🚩 Bandera</th>
+                    <th>🌎 País</th>
+                    <th>📰 Nombre del periódico</th>
+                    <th>🔗 Página web</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <!-- ARGENTINA -->
+                <tr>
+                    <td rowspan="3" class="bandera">
+                        <img src="https://flagcdn.com/w160/ar.png"
+                             alt="Bandera de Argentina">
+                    </td>
+                    <td rowspan="3" class="pais argentina">Argentina</td>
+                    <td>Clarín</td>
+                    <td><a href="https://www.clarin.com" target="_blank" rel="noopener noreferrer">Visitar ↗</a></td>
+                </tr>
+                <tr>
+                    <td>La Nación</td>
+                    <td><a href="https://www.lanacion.com.ar" target="_blank" rel="noopener noreferrer">Visitar ↗</a></td>
+                </tr>
+                <tr>
+                    <td>Página/12</td>
+                    <td><a href="https://www.pagina12.com.ar" target="_blank" rel="noopener noreferrer">Visitar ↗</a></td>
+                </tr>
+
+                <tr class="separador"><td colspan="4"></td></tr>
+
+                <!-- COLOMBIA -->
+                <tr>
+                    <td rowspan="3" class="bandera">
+                        <img src="https://flagcdn.com/w160/co.png"
+                             alt="Bandera de Colombia">
+                    </td>
+                    <td rowspan="3" class="pais colombia">Colombia</td>
+                    <td>El Tiempo</td>
+                    <td><a href="https://www.eltiempo.com" target="_blank" rel="noopener noreferrer">Visitar ↗</a></td>
+                </tr>
+                <tr>
+                    <td>El Espectador</td>
+                    <td><a href="https://www.elespectador.com" target="_blank" rel="noopener noreferrer">Visitar ↗</a></td>
+                </tr>
+                <tr>
+                    <td>El Colombiano</td>
+                    <td><a href="https://www.elcolombiano.com" target="_blank" rel="noopener noreferrer">Visitar ↗</a></td>
+                </tr>
+
+                <tr class="separador"><td colspan="4"></td></tr>
+
+                <!-- ECUADOR -->
+                <tr>
+                    <td rowspan="3" class="bandera">
+                        <img src="https://flagcdn.com/w160/ec.png"
+                             alt="Bandera de Ecuador">
+                    </td>
+                    <td rowspan="3" class="pais ecuador">Ecuador</td>
+                    <td>El Universo</td>
+                    <td><a href="https://www.eluniverso.com" target="_blank" rel="noopener noreferrer">Visitar ↗</a></td>
+                </tr>
+                <tr>
+                    <td>El Comercio</td>
+                    <td><a href="https://www.elcomercio.com" target="_blank" rel="noopener noreferrer">Visitar ↗</a></td>
+                </tr>
+                <tr>
+                    <td>Expreso</td>
+                    <td><a href="https://www.expreso.ec" target="_blank" rel="noopener noreferrer">Visitar ↗</a></td>
+                </tr>
+
+                <tr class="separador"><td colspan="4"></td></tr>
+
+                <!-- ESPAÑA -->
+                <tr>
+                    <td rowspan="3" class="bandera">
+                        <img src="https://flagcdn.com/w160/es.png"
+                             alt="Bandera de España">
+                    </td>
+                    <td rowspan="3" class="pais espana">España</td>
+                    <td>El País</td>
+                    <td><a href="https://elpais.com" target="_blank" rel="noopener noreferrer">Visitar ↗</a></td>
+                </tr>
+                <tr>
+                    <td>ABC</td>
+                    <td><a href="https://www.abc.es" target="_blank" rel="noopener noreferrer">Visitar ↗</a></td>
+                </tr>
+                <tr>
+                    <td>El Mundo</td>
+                    <td><a href="https://www.elmundo.es" target="_blank" rel="noopener noreferrer">Visitar ↗</a></td>
+                </tr>
+
+                <tr class="separador"><td colspan="4"></td></tr>
+
+                <!-- MEXICO -->
+                <tr>
+                    <td rowspan="3" class="bandera">
+                        <img src="https://flagcdn.com/w160/mx.png"
+                             alt="Bandera de México">
+                    </td>
+                    <td rowspan="3" class="pais mexico">México</td>
+                    <td>El Universal</td>
+                    <td><a href="https://www.eluniversal.com.mx" target="_blank" rel="noopener noreferrer">Visitar ↗</a></td>
+                </tr>
+                <tr>
+                    <td>La Jornada</td>
+                    <td><a href="https://www.jornada.com.mx" target="_blank" rel="noopener noreferrer">Visitar ↗</a></td>
+                </tr>
+                <tr>
+                    <td>Milenio</td>
+                    <td><a href="https://www.milenio.com" target="_blank" rel="noopener noreferrer">Visitar ↗</a></td>
+                </tr>
+
+                <tr class="separador"><td colspan="4"></td></tr>
+
+                <!-- PERU -->
+                <tr>
+                    <td rowspan="3" class="bandera">
+                        <img src="https://flagcdn.com/w160/pe.png"
+                             alt="Bandera de Perú">
+                    </td>
+                    <td rowspan="3" class="pais peru">Perú</td>
+                    <td>El Comercio</td>
+                    <td><a href="https://elcomercio.pe" target="_blank" rel="noopener noreferrer">Visitar ↗</a></td>
+                </tr>
+                <tr>
+                    <td>La República</td>
+                    <td><a href="https://larepublica.pe" target="_blank" rel="noopener noreferrer">Visitar ↗</a></td>
+                </tr>
+                <tr>
+                    <td>Gestión</td>
+                    <td><a href="https://gestion.pe" target="_blank" rel="noopener noreferrer">Visitar ↗</a></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </main>
+
+    <footer>
+        <h2>🌎 Periódicos internacionales 📰</h2>
+        <p>Conoce las noticias de diferentes países del mundo.</p>
+        <p>Proyecto escolar · Curso 3 ro "C"</p>
+       
+    </footer>
+
+</body>
+</html>
